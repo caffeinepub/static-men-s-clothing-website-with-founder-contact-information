@@ -1,102 +1,22 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Static Men's Clothing Store Single-Page Landing",
+  "title": "Add print-on-demand availability line to Zayora landing page hero",
   "requirements": [
     {
-      "id": "REQ-1",
-      "summary": "Build a single-page static landing that displays the exact title, founder line, and both phone numbers with ordering instruction in English.",
+      "id": "REQ-9",
+      "summary": "Add a prominent, stylistically consistent hero-area information line stating that print-on-demand service is available, without altering existing required texts.",
       "acceptanceCriteria": [
-        "Landing page renders the title exactly as “Men’s Clothing Store”.",
-        "Founder information is displayed exactly as “Founder: Yash Jaiswal”.",
-        "Main contact number is displayed exactly as “9919031636”.",
-        "Order contact instruction is displayed exactly as “Order Now: 9919031626”.",
-        "No backend calls are required to view the page content."
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/App.tsx",
-          "operation": "create",
-          "description": "Create the single-page React view containing the required English text exactly as specified (title, founder, contact, order instruction) and static informational sections. Use shadcn/ui composition (e.g., Card/Separator/Button variants where appropriate) for consistent layout and styling; verify the component's usage instructions before implementing."
-        },
-        {
-          "path": "frontend/src/main.tsx",
-          "operation": "modify",
-          "description": "Ensure the app renders the static landing without requiring any authentication flow for viewing content (remove InternetIdentityProvider wrapping if it would prompt/login or otherwise gate rendering)."
-        },
-        {
-          "path": "frontend/index.html",
-          "operation": "modify",
-          "description": "Keep document language and metadata aligned with an English static informational site (ensure lang stays 'en' and title is appropriate for the landing)."
-        }
-      ]
-    },
-    {
-      "id": "REQ-2",
-      "summary": "Make both phone numbers tappable/clickable via tel: links with clear labels for general contact vs ordering.",
-      "acceptanceCriteria": [
-        "Clicking/tapping the main contact number opens the device dialer via a tel: link.",
-        "Clicking/tapping the order number opens the device dialer via a tel: link.",
-        "Labels/text make it clear which number is for general contact and which is for ordering."
+        "The page displays an additional line of text that communicates \"Print on demand available\" (or equivalent correct English phrasing).",
+        "The new information is visible on initial page load without requiring navigation to another page.",
+        "Existing required texts remain present and unchanged: \"Men's Clothing Store\", \"Founder: Yash Jaiswal\", main contact number \"9919031636\", and ordering number \"9919031626\".",
+        "The new line matches the existing site styling (typography/colors/spacing) and does not introduce a new theme."
       ],
       "file_operations": [
         {
           "path": "frontend/src/App.tsx",
           "operation": "modify",
-          "description": "Render both numbers as distinct tel: links with explicit labels (general contact vs ordering). Use shadcn/ui Button (as link) and/or Card callouts to clearly separate the two actions; verify the component's usage instructions before implementing."
-        }
-      ]
-    },
-    {
-      "id": "REQ-3",
-      "summary": "Apply a coherent, modern fashion-forward theme (avoid blue/purple dominance) with responsive layout and emphasized contact/order callouts.",
-      "acceptanceCriteria": [
-        "The page uses a consistent color palette and typography appropriate for a men’s fashion storefront (avoid blue/purple as dominant theme colors).",
-        "Layout is responsive and looks good on mobile and desktop.",
-        "Contact/order callouts are visually emphasized (e.g., cards or highlighted sections) without adding new product features."
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/index.css",
-          "operation": "create",
-          "description": "Add global Tailwind + theme token CSS (shadcn/ui variable-based colors) using a modern neutral palette (e.g., charcoal/black/ivory with metallic/gold accent) and consistent typography defaults; avoid blue/purple as dominant colors."
-        },
-        {
-          "path": "frontend/tailwind.config.js",
-          "operation": "modify",
-          "description": "Adjust/extend Tailwind theme settings as needed to support the chosen modern fashion-forward palette and spacing/typography scale without introducing blue/purple as dominant theme colors."
-        },
-        {
-          "path": "frontend/src/App.tsx",
-          "operation": "modify",
-          "description": "Apply responsive layout structure (header/hero/sections) and visually emphasized contact/order callouts using shadcn/ui components (e.g., Card/Badge/Separator) and Tailwind utilities; verify the component's usage instructions before implementing."
-        }
-      ]
-    },
-    {
-      "id": "REQ-4",
-      "summary": "Add and render the generated logo and hero banner images from frontend/public/assets/generated on the landing page.",
-      "acceptanceCriteria": [
-        "Generated images exist under frontend/public/assets/generated and are loaded directly by the React app (no backend/image API).",
-        "The logo image is displayed in the header/brand area.",
-        "The hero/banner image is displayed prominently near the top of the page.",
-        "Images render correctly in production build and on mobile/desktop."
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/public/assets/generated/mens-clothing-logo.dim_512x512.png",
-          "operation": "create",
-          "description": "Add the generated static logo asset at the required path for direct loading by the React app."
-        },
-        {
-          "path": "frontend/public/assets/generated/mens-clothing-hero.dim_1600x800.png",
-          "operation": "create",
-          "description": "Add the generated static hero/banner asset at the required path for direct loading by the React app."
-        },
-        {
-          "path": "frontend/src/App.tsx",
-          "operation": "modify",
-          "description": "Reference and render the static images from frontend/public/assets/generated/mens-clothing-logo.dim_512x512.png (header/brand area) and frontend/public/assets/generated/mens-clothing-hero.dim_1600x800.png (prominent hero near top). Use shadcn/ui layout composition for header/hero framing where helpful; verify the component's usage instructions before implementing."
+          "description": "Within the Hero Section text block, add one additional English information line such as \"Print on demand available\" in a visually prominent but consistent placement (e.g., between the existing hero description and the \"Order Now\" call-to-action, or immediately below the CTA), ensuring the existing required texts and phone numbers remain present and unchanged and that no new pages or backend dependencies are introduced."
         }
       ]
     }

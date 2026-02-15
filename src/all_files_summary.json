@@ -1,14 +1,14 @@
 {
-  "backend/main.mo": "Empty Motoko actor with no methods.",
-  "feature_evidence.json": "Feature evidence report mapping features to affected frontend files and components.",
-  "frontend-file-summaries.txt": "Prewritten summaries of key frontend files for reference in build planning.",
-  "frontend/index.css": "Tailwind base styles defining OKLCH color tokens and global styling for light/dark themes.",
-  "frontend/index.html": "HTML entry point setting metadata and mounting the React app.",
-  "frontend/src/App.tsx": "Main landing page UI with logo, hero section, clickable phone links, about section, and styled content.",
-  "frontend/src/hooks/useActor.ts": "React hook that creates and manages a backend actor instance using Internet Identity and react-query.",
-  "frontend/src/hooks/useInternetIdentity.ts": "Context and hooks for managing Internet Identity authentication lifecycle and state.",
-  "frontend/src/index.css": "Global Tailwind styles defining charcoal/ivory palette with gold accents and typography rules.",
-  "frontend/src/main.tsx": "React entry rendering App with React Query and Internet Identity providers.",
-  "frontend/tailwind.config.js": "Configures TailwindCSS with custom colors, container settings, animations, and plugins for typography, container queries, and animations.",
-  "project_state.json": "Defines the project state for building a static men’s clothing website, including requirements, features, images, and metadata."
+  "backend/main.mo": "Empty Motoko actor with no methods or logic.",
+  "feature_evidence.json": "Feature evidence report describing a landing-page update to add a print‑on‑demand info line referencing App.tsx.",
+  "frontend-file-summaries.txt": "Prewritten summaries of several frontend files including App.tsx, index.css, tailwind config, HTML entry, and main.tsx.",
+  "frontend/index.css": "Tailwind base layer defining OKLCH color tokens and dark‑mode variants for the site’s theme.",
+  "frontend/index.html": "HTML entry including meta description, title, root mount point, and script loading main.tsx.",
+  "frontend/src/App.tsx": "React landing page UI with hero section, print‑on‑demand text, contact numbers, gallery, about section, and footer.",
+  "frontend/src/hooks/useActor.ts": "React hook that creates and refreshes a backend actor using identity from Internet Identity and react‑query.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Context and hooks handling Internet Identity authentication, login, identity loading, and state management.",
+  "frontend/src/index.css": "Tailwind root variables defining charcoal‑ivory palette with gold accents plus typography and dark‑mode styles.",
+  "frontend/src/main.tsx": "Main entry rendering App inside InternetIdentityProvider and QueryClientProvider.",
+  "frontend/tailwind.config.js": "Tailwind configuration extending theme colors, radii, animations, and enabling plugins for typography, container queries, and animations.",
+  "project_state.json": "Describes the current project state and requirements for building a styled single‑page Zayora website with branding, images, clickable phone numbers, and a forthcoming products section. Lists implemented features, metadata updates, and visual design expectations."
 }

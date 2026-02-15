@@ -1,12 +1,10 @@
 # Specification
 
 ## Summary
-**Goal:** Create a single-page static men’s clothing website that clearly presents the store title, founder info, and two clickable phone numbers (general contact and ordering) with a modern fashion-forward theme.
+**Goal:** Add a prominent, stylistically consistent landing-page line indicating that print-on-demand service is available.
 
 **Planned changes:**
-- Build a responsive single-page layout with the exact required English text: “Men’s Clothing Store”, “Founder: Yash Jaiswal”, “9919031636”, and “Order Now: 9919031626”.
-- Make both phone numbers clickable via `tel:` links and visually label them as general contact vs ordering.
-- Apply a coherent modern men’s fashion visual theme (avoid blue/purple as dominant colors), including consistent typography, spacing, and styled sections/callouts.
-- Add and render generated static assets (logo + wide hero/banner) from `frontend/public/assets/generated` with no backend/image API.
+- Add a single new information line reading “Print on demand available” (or equivalent correct English phrasing) in a prominent location on the landing page (e.g., within the hero text block or near the ordering call-to-action).
+- Ensure the new line matches existing typography, colors, and spacing, and does not alter existing required text lines.
 
-**User-visible outcome:** Visitors can view a polished landing page for “Men’s Clothing Store”, see the founder and contact details, and tap either the general contact or order number to open their device dialer.
+**User-visible outcome:** On initial page load, visitors can immediately see that print-on-demand is available, while all existing business title, founder line, and phone numbers remain unchanged.

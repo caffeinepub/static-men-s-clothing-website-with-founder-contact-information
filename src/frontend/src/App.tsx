@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin } from 'lucide-react';
+import { Phone } from 'lucide-react';
 import { SiFacebook, SiInstagram, SiX } from 'react-icons/si';
 
 function App() {
@@ -15,12 +15,12 @@ function App() {
           <div className="flex items-center gap-3">
             <img
               src="/assets/generated/mens-clothing-logo.dim_512x512.png"
-              alt="Men's Clothing Store Logo"
+              alt="Zayora Logo"
               className="h-12 w-12 object-contain"
             />
             <div>
-              <h1 className="text-xl font-bold tracking-tight">Men's Clothing Store</h1>
-              <p className="text-xs text-muted-foreground">Premium Fashion for Men</p>
+              <h1 className="text-2xl font-bold tracking-tight">Zayora</h1>
+              <p className="text-sm text-muted-foreground">Men's Clothing Store</p>
             </div>
           </div>
           <a
@@ -47,8 +47,11 @@ function App() {
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-foreground drop-shadow-lg">
                 Elevate Your Style
               </h2>
-              <p className="text-lg md:text-xl text-foreground/90 mb-8 drop-shadow-md">
+              <p className="text-lg md:text-xl text-foreground/90 mb-4 drop-shadow-md">
                 Discover premium men's clothing crafted for the modern gentleman
+              </p>
+              <p className="text-base md:text-lg text-foreground/80 mb-8 drop-shadow-md font-semibold">
+                Print on demand available
               </p>
               <a
                 href="tel:9919031626"
@@ -70,7 +73,7 @@ function App() {
             <div className="max-w-3xl mx-auto text-center">
               <h3 className="text-3xl md:text-4xl font-bold mb-6">About Us</h3>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                Welcome to our premium men's clothing store, where style meets sophistication. 
+                Welcome to Zayora, your premium men's clothing store, where style meets sophistication. 
                 We curate the finest collection of men's fashion, from casual wear to formal attire, 
                 ensuring every piece reflects quality and elegance.
               </p>
@@ -83,6 +86,79 @@ function App() {
                   <p className="text-sm text-muted-foreground">Visionary & Style Curator</p>
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Gallery Section */}
+        <section className="py-16 md:py-24">
+          <div className="container mx-auto px-4">
+            <h3 className="text-3xl md:text-4xl font-bold text-center mb-4">Our Collection</h3>
+            <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
+              Explore our carefully curated selection of premium men's fashion, from sophisticated formal wear to contemporary casual styles.
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+              <div className="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+                <img
+                  src="/assets/generated/zayora-gallery-1.dim_1200x1200.png"
+                  alt="Men's fashion flat-lay outfit on neutral background"
+                  className="w-full h-full object-cover aspect-square group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              </div>
+              <div className="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+                <img
+                  src="/assets/generated/zayora-gallery-2.dim_1200x1200.png"
+                  alt="Men's formalwear detail with blazer, shirt and watch"
+                  className="w-full h-full object-cover aspect-square group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              </div>
+              <div className="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+                <img
+                  src="/assets/generated/zayora-gallery-3.dim_1200x1200.png"
+                  alt="Men's casualwear look with jacket, denim and sneakers"
+                  className="w-full h-full object-cover aspect-square group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              </div>
+              <div className="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+                <img
+                  src="/assets/generated/zayora-gallery-4.dim_1200x1200.png"
+                  alt="Premium fabric texture close-up with weave detail"
+                  className="w-full h-full object-cover aspect-square group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Products Coming Soon Section */}
+        <section className="py-16 md:py-24 bg-muted/30">
+          <div className="container mx-auto px-4">
+            <div className="max-w-3xl mx-auto text-center">
+              <div className="inline-block px-4 py-1 bg-accent/20 text-accent-foreground rounded-full text-sm font-semibold mb-6">
+                Coming Soon
+              </div>
+              <h3 className="text-3xl md:text-4xl font-bold mb-6">Products Coming Soon</h3>
+              <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+                We're currently building our online catalog to showcase our complete collection. 
+                In the meantime, call us directly to explore our full range of premium men's clothing, 
+                get personalized recommendations, and place your order.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a
+                  href="tel:9919031626"
+                  className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-all shadow-lg hover:shadow-xl text-lg font-semibold"
+                >
+                  <Phone className="h-5 w-5" />
+                  Call to Order: 9919031626
+                </a>
+              </div>
+              <p className="text-sm text-muted-foreground mt-6">
+                Our team is ready to assist you with product details, sizing, and orders
+              </p>
             </div>
           </div>
         </section>
@@ -186,10 +262,10 @@ function App() {
               <div className="flex items-center gap-2 mb-4">
                 <img
                   src="/assets/generated/mens-clothing-logo.dim_512x512.png"
-                  alt="Logo"
+                  alt="Zayora Logo"
                   className="h-8 w-8 object-contain"
                 />
-                <span className="font-bold">Men's Clothing Store</span>
+                <span className="font-bold">Zayora</span>
               </div>
               <p className="text-sm text-muted-foreground">
                 Premium fashion for the modern gentleman
@@ -224,7 +300,7 @@ function App() {
             </div>
           </div>
           <div className="border-t border-border pt-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
-            <p>© {currentYear} Men's Clothing Store. All rights reserved.</p>
+            <p>© {currentYear} Zayora. All rights reserved.</p>
             <p>
               Built with love using{' '}
               <a

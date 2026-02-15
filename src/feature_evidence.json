@@ -2,28 +2,8 @@
   "kind": "feature_evidence_report",
   "features": [
     {
-      "featureId": "feature-create-a-single-page-static-website-for-a-men-s-clothing-business-that-clearly-displays-1-site-title-men-s-clothing-store-2-founder-line-founder-yash-jaiswal-3-main-contact-number-9919031636-and-4-ordering-instruction-order-now-9919031626-all-user-facing-text-must-be-in-english",
-      "featureTitle": "Create a single-page static website for a men’s clothing business that clearly displays: (1) site title “Men’s Clothing Store”, (2) founder line “Founder: Yash Jaiswal”, (3) main contact number “9919031636”, and (4) ordering instruction “Order Now: 9919031626”. All user-facing text must be in English.",
-      "files": [
-        "frontend/index.html",
-        "frontend/src/App.tsx",
-        "frontend/src/main.tsx"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-1"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-make-both-phone-numbers-clickable-using-tel-links-and-label-them-clearly-so-users-can-distinguish-general-contact-vs-ordering",
-      "featureTitle": "Make both phone numbers clickable using tel: links, and label them clearly so users can distinguish general contact vs ordering.",
+      "featureId": "feature-add-one-additional-information-line-on-the-landing-page-that-clearly-states-that-print-on-demand-service-is-available-using-correct-english-wording-e-g-print-on-demand-available-place-it-in-a-prominent-visually-consistent-location-such-as-within-the-hero-text-block-or-near-the-ordering-call-to-action-without-removing-or-changing-the-existing-required-business-title-founder-line-or-phone-numbers",
+      "featureTitle": "Add one additional information line on the landing page that clearly states that print-on-demand service is available, using correct English wording (e.g., \"Print on demand available\"). Place it in a prominent, visually consistent location (such as within the hero text block or near the ordering call-to-action) without removing or changing the existing required business title, founder line, or phone numbers.",
       "files": [
         "frontend/src/App.tsx"
       ],
@@ -35,45 +15,7 @@
         "github-export-icp-cli@1.0.0"
       ],
       "testIds": [
-        "REQ-2"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-apply-a-coherent-modern-fashion-forward-visual-theme-not-blue-purple-across-the-page-consistent-typography-spacing-and-component-styling-hero-header-content-sections-and-contact-order-callouts",
-      "featureTitle": "Apply a coherent, modern fashion-forward visual theme (not blue/purple) across the page: consistent typography, spacing, and component styling (hero/header, content sections, and contact/order callouts).",
-      "files": [
-        "frontend/src/App.tsx",
-        "frontend/src/index.css",
-        "frontend/tailwind.config.js"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-3"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-add-generated-static-images-as-assets-and-render-them-on-the-landing-page-a-simple-brand-logo-and-a-wide-hero-banner-image-that-fits-the-chosen-theme-store-images-under-frontend-public-assets-generated-and-reference-them-directly-from-the-frontend",
-      "featureTitle": "Add generated static images as assets and render them on the landing page: a simple brand logo and a wide hero/banner image that fits the chosen theme. Store images under frontend/public/assets/generated and reference them directly from the frontend.",
-      "files": [
-        "frontend/src/App.tsx"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-4"
+        "REQ-9"
       ],
       "confidence": "high"
     }

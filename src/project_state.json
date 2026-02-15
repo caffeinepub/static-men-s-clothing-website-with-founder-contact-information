@@ -1,11 +1,10 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 3,
-  "summary": "Build a static website for a men's clothing business including founder info (Yash Jaiswal) and phone numbers for contact and ordering.",
+  "projectStateVersion": 9,
+  "summary": "Build a static website for the men's clothing brand Zayora including founder info (Yash Jaiswal), clickable contact/order phone numbers, and add additional imagery plus a \"Products Coming Soon\" section.",
   "architectural_notes": [],
   "known_issues": [],
   "isFixRequest": false,
-  "imageRequirements": "## Required Images\n- Minimal monochrome fashion brand logo (mens-clothing-logo.dim_512x512.png)\n- High-contrast men’s fashion hero banner with clean studio backdrop (mens-clothing-hero.dim_1600x800.png)",
   "existing_features": [
     {
       "id": "feature-create-a-single-page-static-website-for-a-men-s-clothing-business-that-clearly-displays-1-site-title-men-s-clothing-store-2-founder-line-founder-yash-jaiswal-3-main-contact-number-9919031636-and-4-ordering-instruction-order-now-9919031626-all-user-facing-text-must-be-in-english",
@@ -38,12 +37,76 @@
         "REQ-4"
       ],
       "version": 1
+    },
+    {
+      "id": "feature-add-the-brand-name-zayora-to-the-website-branding-in-a-prominent-consistent-way-e-g-in-the-header-brand-lockup-and-footer-while-keeping-the-existing-site-title-text-men-s-clothing-store-visible-somewhere-on-the-page",
+      "title": "Add the brand name \"Zayora\" to the website branding in a prominent, consistent way (e.g., in the header/brand lockup and footer) while keeping the existing site title text \"Men's Clothing Store\" visible somewhere on the page.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-html-document-metadata-to-include-the-brand-name-zayora-e-g-the-page-title-and-or-meta-description-without-removing-the-existing-men-s-clothing-store-context",
+      "title": "Update the HTML document metadata to include the brand name \"Zayora\" (e.g., the page <title> and/or meta description) without removing the existing men’s clothing store context.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-new-products-coming-soon-section-to-the-existing-single-page-zayora-website-using-clear-english-copy-to-indicate-that-the-product-catalog-will-be-added-later-and-include-a-prominent-call-to-action-that-links-to-the-existing-ordering-phone-number-tel-9919031626",
+      "title": "Add a new \"Products Coming Soon\" section to the existing single-page Zayora website, using clear English copy to indicate that the product catalog will be added later, and include a prominent call-to-action that links to the existing ordering phone number (tel:9919031626).",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-more-static-fashion-product-imagery-beyond-the-existing-logo-and-hero-banner-by-creating-and-rendering-a-small-gallery-grid-section-on-the-landing-page-that-uses-newly-generated-images-stored-under-frontend-public-assets-generated-and-referenced-directly-from-the-frontend",
+      "title": "Add more static fashion/product imagery beyond the existing logo and hero banner by creating and rendering a small gallery/grid section on the landing page that uses newly generated images stored under frontend/public/assets/generated and referenced directly from the frontend.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-one-additional-information-line-on-the-landing-page-that-clearly-states-that-print-on-demand-service-is-available-using-correct-english-wording-e-g-print-on-demand-available-place-it-in-a-prominent-visually-consistent-location-such-as-within-the-hero-text-block-or-near-the-ordering-call-to-action-without-removing-or-changing-the-existing-required-business-title-founder-line-or-phone-numbers",
+      "title": "Add one additional information line on the landing page that clearly states that print-on-demand service is available, using correct English wording (e.g., \"Print on demand available\"). Place it in a prominent, visually consistent location (such as within the hero text block or near the ordering call-to-action) without removing or changing the existing required business title, founder line, or phone numbers.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
     }
   ],
   "new_feature_requests": [
     {
       "id": "AR-1",
       "summary": "Create a static men's clothing website page showing business title, founder info (Yash Jaiswal), main contact number (9919031636), and order contact number (9919031626).",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Add the brand name \"Zayora\" to the website (e.g., in the header/hero branding).",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Add more images to the website (beyond the existing logo and hero/banner) to enhance the page content/branding.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Add a \"Products Coming Soon\" section/page content to the website indicating products will be added later.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Add an additional information line/section on the website indicating \"Print on demand available\" (or similar wording).",
       "reqIds": [],
       "status": "pending"
     }
