@@ -1,0 +1,14 @@
+{
+  "backend/main.mo": "Empty Motoko actor with no methods.",
+  "feature_evidence.json": "Feature evidence report mapping features to affected frontend files and components.",
+  "frontend-file-summaries.txt": "Prewritten summaries of key frontend files for reference in build planning.",
+  "frontend/index.css": "Tailwind base styles defining OKLCH color tokens and global styling for light/dark themes.",
+  "frontend/index.html": "HTML entry point setting metadata and mounting the React app.",
+  "frontend/src/App.tsx": "Main landing page UI with logo, hero section, clickable phone links, about section, and styled content.",
+  "frontend/src/hooks/useActor.ts": "React hook that creates and manages a backend actor instance using Internet Identity and react-query.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Context and hooks for managing Internet Identity authentication lifecycle and state.",
+  "frontend/src/index.css": "Global Tailwind styles defining charcoal/ivory palette with gold accents and typography rules.",
+  "frontend/src/main.tsx": "React entry rendering App with React Query and Internet Identity providers.",
+  "frontend/tailwind.config.js": "Configures TailwindCSS with custom colors, container settings, animations, and plugins for typography, container queries, and animations.",
+  "project_state.json": "Defines the project state for building a static men’s clothing website, including requirements, features, images, and metadata."
+}

@@ -1,0 +1,7 @@
+{
+  "frontend/src/App.tsx": "Single-page static landing for Men's Clothing Store featuring hero section with generated images, founder info (Yash Jaiswal), two clickable phone numbers (9919031636 for general contact, 9919031626 for orders), features section, and footer with attribution.",
+  "frontend/src/index.css": "Global styles with OKLCH color system using charcoal/ivory palette with warm gold accents, avoiding blue/purple; includes light and dark mode tokens for a sophisticated men's fashion aesthetic.",
+  "frontend/tailwind.config.js": "Tailwind configuration extending the theme with custom color tokens, border radius, and animation settings to support the fashion-forward design system.",
+  "frontend/index.html": "HTML entry point with updated meta description and title reflecting the men's clothing store and contact information.",
+  "frontend/src/main.tsx": "Application entry point rendering App component wrapped in QueryClientProvider without InternetIdentityProvider to ensure static content is immediately visible without authentication."
+}

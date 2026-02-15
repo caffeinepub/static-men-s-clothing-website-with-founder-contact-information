@@ -1,0 +1,105 @@
+{
+  "kind": "build_request",
+  "title": "Static Men's Clothing Website with Founder & Contact Information",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Create a single-page static website for a men’s clothing business that clearly displays: (1) site title “Men’s Clothing Store”, (2) founder line “Founder: Yash Jaiswal”, (3) main contact number “9919031636”, and (4) ordering instruction “Order Now: 9919031626”. All user-facing text must be in English.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2",
+          "msg-4",
+          "msg-6"
+        ],
+        "quotes": [
+          "Create my website for men cloths create a static website and add my mobile number 9919031636 and add my information about yash jaiswal is founder of this company and add order to contact this number 9919031626",
+          "Title: Men’s Clothing Store\nFounder: Yash Jaiswal\nContact: 9919031636\nOrder Now: 9919031626"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Landing page renders the title exactly as “Men’s Clothing Store”.",
+        "Founder information is displayed exactly as “Founder: Yash Jaiswal”.",
+        "Main contact number is displayed exactly as “9919031636”.",
+        "Order contact instruction is displayed exactly as “Order Now: 9919031626”.",
+        "No backend calls are required to view the page content."
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Make both phone numbers clickable using tel: links, and label them clearly so users can distinguish general contact vs ordering.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2",
+          "msg-4"
+        ],
+        "quotes": [
+          "add my mobile number 9919031636",
+          "add order to contact this number 9919031626"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Clicking/tapping the main contact number opens the device dialer via a tel: link.",
+        "Clicking/tapping the order number opens the device dialer via a tel: link.",
+        "Labels/text make it clear which number is for general contact and which is for ordering."
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Apply a coherent, modern fashion-forward visual theme (not blue/purple) across the page: consistent typography, spacing, and component styling (hero/header, content sections, and contact/order callouts).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Create my website for men cloths create a static website"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The page uses a consistent color palette and typography appropriate for a men’s fashion storefront (avoid blue/purple as dominant theme colors).",
+        "Layout is responsive and looks good on mobile and desktop.",
+        "Contact/order callouts are visually emphasized (e.g., cards or highlighted sections) without adding new product features."
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "text": "Add generated static images as assets and render them on the landing page: a simple brand logo and a wide hero/banner image that fits the chosen theme. Store images under frontend/public/assets/generated and reference them directly from the frontend.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Create my website for men cloths create a static website"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Generated images exist under frontend/public/assets/generated and are loaded directly by the React app (no backend/image API).",
+        "The logo image is displayed in the header/brand area.",
+        "The hero/banner image is displayed prominently near the top of the page.",
+        "Images render correctly in production build and on mobile/desktop."
+      ]
+    }
+  ],
+  "constraints": [
+    "Frontend must use the existing React + TypeScript + Tailwind + shadcn/ui component composition approach; do not edit any files under frontend/src/components/ui.",
+    "Do not add third-party authentication or external services; this is a static informational site.",
+    "Use English for all user-facing text."
+  ],
+  "nonGoals": [
+    "E-commerce checkout, cart, payments, or inventory management.",
+    "User accounts/authentication.",
+    "Admin dashboard/CMS for editing content.",
+    "Backend persistence or databases."
+  ],
+  "imageRequirements": {
+    "required": [
+      "Minimal monochrome fashion brand logo (mens-clothing-logo.dim_512x512.png)",
+      "High-contrast men’s fashion hero banner with clean studio backdrop (mens-clothing-hero.dim_1600x800.png)"
+    ],
+    "edits": []
+  }
+}
